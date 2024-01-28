@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Puppeteer Form Submission</title>
+    <script type="module" src="test.js"></script>
+</head>
+<body>
+    
+<!--    <h1>Simple Puppeteer Form Submission</h1>
+
+    <form id="login-form">
+        <input type="text" id="uname" placeholder="Username">
+        <input type="password" id="pwd" placeholder="Password">
+        <button type="submit" id="login">Login</button>
+    </form>-->
+
+<script>
+    let params = (new URL(document.location)).searchParams;
+    let mobile = params.get("mobile");
+    let content = params.get("content");
+
+    console.log(mobile)
+    console.log(content)
+</script>
+
+</body>
+</html>
