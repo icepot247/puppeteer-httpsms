@@ -17,7 +17,7 @@ app.get('/sms', async (req, res) => {
   const browser = await puppeteer.launch({
     "headless": "new",
     "args": ["--fast-start", "--disable-extensions", "--no-sandbox"],
-    "ignoreHTTPSErrors": true,
+    "ignoreHTTPSErrors": true
   });
 
 /*  const browser = await puppeteer.launch({
