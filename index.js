@@ -56,6 +56,10 @@ app.get('/', async (req, res) => {
   res.json({'status':true, 'msg':'Welcome'});
 });
 
+app.get('/test', async (req, res) => {
+  res.json({'status':true, 'msg':'test'});
+});
+
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
